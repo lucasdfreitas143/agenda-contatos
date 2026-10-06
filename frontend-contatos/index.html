@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="PT-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="filtros">
+    <h2>Filtrar contatos</h2>
+    <input type="text" id="filtro-nome" placeholder="Nome">
+    <input type="text" id="filtro-cidade" placeholder="Cidade">
+    <button id="btn-filtrar">Buscar</button>
+    <button id="btn-limpar-fitro">Limpar</button>
+  </section>
+
+  <section class="cadastro">
+    <h2 id="cadastro-form">Cadastrar contato</h2>
+    <form id="form-cadastro">
+      <input type="hidden" id="contato-id">
+      <input type="text" id="cadastro_nome" placeholder="Nome" required>
+      <input type="text" id="cadastro_telefone" placeholder="Telefone" required>
+      <input type="text" id="cadastro_cidade" placeholder="Cidade" required>
+      <input type="text" id="cadastro_email" placeholder="E-mail">
+      <input type="number" id="ano" placeholder="Ano" required>
+      <input type="number" id="nota" placeholder="Nota (opcional)" step="0.1">
+      <button type="submit">Salvar</button>
+      <button type="button" id="btn-cancelar">Cancelar</button>
+    </form>
+  </section>
+
+
+
+    <h1>Lista de Contatos📞</h1>
+    <section class="Tabela-contatos">
+    <h2>Lista de Contatos</h2>
+    <table> 
+        <thead>
+            <tr>
+                <th>Nome</th><th>Telefone</th><th>E-mail</th>
+                <th>Cidade</th><th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="lista-contatos"></tbody>
+    </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
